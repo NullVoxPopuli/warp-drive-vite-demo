@@ -2,6 +2,7 @@
   "name": "warp-drive-vite-demo",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,8 @@
     "@ember-data/request-utils": "5.4.0-alpha.52",
     "@ember-data/store": "5.4.0-alpha.52",
     "@ember-data/tracking": "5.4.0-alpha.52",
+    "@embroider/vite": "0.2.1-unstable.ef8eacd",
+    "@rollup/plugin-babel": "^6.0.4",
     "@warp-drive/core-types": "0.0.0-alpha.38"
   },
   "pnpm": {
@@ -26,7 +29,9 @@
       "@ember-data/store@5.4.0-alpha.52": "patches/@ember-data__store@5.4.0-alpha.52.patch",
       "@ember-data/request@5.4.0-alpha.52": "patches/@ember-data__request@5.4.0-alpha.52.patch",
       "@ember-data/json-api@5.4.0-alpha.52": "patches/@ember-data__json-api@5.4.0-alpha.52.patch",
-      "@ember-data/tracking@5.4.0-alpha.52": "patches/@ember-data__tracking@5.4.0-alpha.52.patch"
+      "@ember-data/tracking@5.4.0-alpha.52": "patches/@ember-data__tracking@5.4.0-alpha.52.patch",
+      "@ember-data/graph@5.4.0-alpha.52": "patches/@ember-data__graph@5.4.0-alpha.52.patch",
+      "@warp-drive/core-types@0.0.0-alpha.38": "patches/@warp-drive__core-types@0.0.0-alpha.38.patch"
     }
   }
 }

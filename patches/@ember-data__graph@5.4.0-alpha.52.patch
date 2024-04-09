@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index 97ce2e4aa22d332f43e6d2957f3c3e58fa5f0bcd..1dde1b36f405ff9686ef7fa9e8e9b683eaca80cf 100644
+--- a/package.json
++++ b/package.json
+@@ -10,6 +10,10 @@
+     "url": "git+ssh://git@github.com:emberjs/data.git",
+     "directory": "packages/graph"
+   },
++  "exports": { 
++    ".": "./addon/index.js",
++    "./*": "./addon/*.js"
++  },
+   "license": "MIT",
+   "author": "Chris Thoburn <runspired@users.noreply.github.com>",
+   "scripts": {
