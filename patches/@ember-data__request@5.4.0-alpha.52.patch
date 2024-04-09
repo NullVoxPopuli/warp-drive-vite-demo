@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index 88a99502ade0f258c31f82d3053d136161df8134..e7352e1b76221afa51b062946b16cb3799cef61f 100644
+--- a/package.json
++++ b/package.json
+@@ -14,6 +14,10 @@
+   "keywords": [
+     "ember-addon"
+   ],
++  "exports": { 
++    ".": "./addon/index.js",
++    "./*": "./addon/*"
++  },
+   "scripts": {
+     "lint": "eslint . --quiet --cache --cache-strategy=content --ext .js,.ts,.mjs,.cjs --report-unused-disable-directives",
+     "build:types": "tsc --build",

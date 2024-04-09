@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index 22394a2ba82cf51b39a3f3aabe05ffe60ce70965..b6e439ed2d25fc81a0871a2958094d20baa83821 100644
+--- a/package.json
++++ b/package.json
+@@ -12,6 +12,10 @@
+   },
+   "license": "MIT",
+   "author": "",
++  "exports": { 
++    ".": "./addon/index.js",
++    "./*": "./addon/*.js"
++  },
+   "scripts": {
+     "lint": "eslint . --quiet --cache --cache-strategy=content --ext .js,.ts,.mjs,.cjs --report-unused-disable-directives",
+     "build:types": "tsc --build",

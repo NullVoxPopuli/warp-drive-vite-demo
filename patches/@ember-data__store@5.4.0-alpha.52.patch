@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index fbce8fffa797eb8f07b655323c99794e7ea07dc0..d3b2e9357e55bca08301788b7854ec60d015bd43 100644
+--- a/package.json
++++ b/package.json
+@@ -12,6 +12,10 @@
+   },
+   "license": "MIT",
+   "author": "Chris Thoburn <runspired@users.noreply.github.com>",
++  "exports": {
++    ".": "./addon/index.js",
++    "./*": "./addon/*"
++  },
+   "files": [
+     "unstable-preview-types",
+     "addon-main.js",
